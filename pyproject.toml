@@ -1,0 +1,60 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pydra-templateflow"
+version = "0.0.0"
+description = 'Pydra tasks for TemplateFlow'
+readme = "README.md"
+requires-python = ">=3.7"
+license = "Apache-2.0"
+keywords = [
+  "atlas",
+  "brain",
+  "neuroimaging",
+  "pydra",
+  "reference",
+  "template",
+  "templateflow",
+]
+authors = [
+  { name = "Ghislain Vaillant", email = "ghisvail@gmail.com" },
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: Apache Software License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Scientific/Engineering",
+  "Topic :: Software Development :: Libraries",
+]
+dependencies = [
+  "pydra>=0.22",
+  "templateflow>=23.0.0",
+]
+
+[project.urls]
+Documentation = "https://github.com/ghisvail/pydra-templateflow#readme"
+Issues = "https://github.com/ghisvail/pydra-templateflow/issues"
+Source = "https://github.com/ghisvail/pydra-templateflow"
+
+[tool.black]
+target-version = ["py37"]
+line-length = 120
+
+[tool.isort]
+profile = "black"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = [
+  "--doctest-modules",
+  "--doctest-continue-on-failure",
+]
