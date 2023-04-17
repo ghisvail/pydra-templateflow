@@ -22,7 +22,7 @@ for human and nonhuman brains.
 ## Available tasks
 
 This package provides a `get_template` task, which takes a mandatory `template_id` argument
-and an optional `output_entities` mapping from output names to their respective query entities.
+and an optional `output_queries` mapping from output names to their respective query entities.
 
 The following example showcases using `get_template` to download the template image,
 brain and head masks for the Linear ICBM Average Brain (ICBM152).
@@ -32,7 +32,7 @@ from pydra.tasks import templateflow
 
 task = templateflow.get_template(
     template_id="MNI152Lin",
-    output_entities={
+    output_queries={
         "brain_mask": {"resolution": "1", "suffix": "mask", "desc": "head"},
         "head_mask": {"resolution": 1, "suffix": "mask", "desc": "brain"},
         "t1w_image": {"resolution": "1", "suffix": "T1w"},

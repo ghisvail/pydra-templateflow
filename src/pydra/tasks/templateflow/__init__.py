@@ -11,15 +11,15 @@ import pydra
 
 
 @pydra.mark.task
-def get_template(template_id: str, output_entities: dict) -> dict:
+def get_template(template_id: str, output_queries: dict) -> dict:
     """Get template using the TemplateFlow Python client."""
 
-    output_entities = output_entities or {}
+    output_queries = output_queries or {}
 
     return dict(
         {"template_description": _api.get_metadata(template=template_id)},
         **{
             output: _api.get(template=template_id, **entities)
-            for output, entities in output_entities.items()
+            for output, entities in output_queries.items()
         }
     )
