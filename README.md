@@ -12,7 +12,7 @@ construction, manipulation, and distributed execution.
 for publicly hosting and distributing neuroimaging templates
 for human and nonhuman brains.
 
-** Table of contents **
+**Table of contents**
 
 - [Available tasks](#available-tasks)
 - [Installation](#installation)
