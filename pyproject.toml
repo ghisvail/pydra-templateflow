@@ -57,4 +57,5 @@ minversion = "6.0"
 addopts = [
   "--doctest-modules",
   "--doctest-continue-on-failure",
+  "--import-mode=importlib"
 ]
