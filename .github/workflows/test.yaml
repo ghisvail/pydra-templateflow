@@ -40,5 +40,5 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install Hatch
       run: pipx install hatch
-    - name: Lint codebase
+    - name: Test codebase
       run: hatch run test
