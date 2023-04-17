@@ -36,8 +36,5 @@ def get_template(template_id: str, output_queries: dict) -> dict:
 
     return dict(
         {"template_description": _api.get_metadata(template=template_id)},
-        **{
-            output: _api.get(template=template_id, **entities)
-            for output, entities in output_queries.items()
-        }
+        **{output: _api.get(template=template_id, **entities) for output, entities in output_queries.items()},
     )
