@@ -39,7 +39,7 @@ task = templateflow.get_template(
     template_id="MNI152Lin",
     output_queries={
         "brain_mask": {"resolution": "1", "suffix": "mask", "desc": "head"},
-        "head_mask": {"resolution": 1, "suffix": "mask", "desc": "brain"},
+        "head_mask": {"resolution": "1", "suffix": "mask", "desc": "brain"},
         "t1w_image": {"resolution": "1", "suffix": "T1w"},
     },
 )
