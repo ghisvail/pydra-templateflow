@@ -37,7 +37,7 @@ def get_template(output_queries: dict, **kwargs) -> pydra.engine.task.FunctionTa
     >>> task = get_template(template_id="MNI152Lin", output_queries={"t1w": {"resolution": "1", "suffix": "T1w"}})
     >>> result = task()
     >>> result.output.template_description  # doctest: +ELLIPSIS
-    {... 'Name': 'Linear ICBM Average Brain (ICBM152) Stereotaxic Registration Model', ...}
+    {... 'Identifier': 'MNI152Lin', ...}
     >>> result.output.t1w  # doctest: +ELLIPSIS
     PosixPath('.../tpl-MNI152Lin_res-01_T1w.nii.gz')
     """
