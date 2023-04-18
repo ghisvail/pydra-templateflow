@@ -26,8 +26,8 @@ for human and nonhuman brains.
 
 ## Available tasks
 
-This package provides a `get_template` task, which takes a mandatory `template_id` argument
-and an optional `output_queries` mapping from output names to their respective query entities.
+This package provides a `get_template` task, which takes a `template_id` argument
+and a `output_queries` mapping from output names to their respective file queries.
 
 The following example showcases using `get_template` to download the template image,
 brain and head masks for the Linear ICBM Average Brain (ICBM152).
