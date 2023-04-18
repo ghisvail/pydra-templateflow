@@ -45,6 +45,10 @@ task = templateflow.get_template(
 )
 
 result = task()
+
+# result.output.brain_mask
+# result.output.head_mask
+# result.output.t1w_image
 ```
 
 Please check the list of available templates [here][templateflow-browse].  
