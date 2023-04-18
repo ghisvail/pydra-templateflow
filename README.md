@@ -1,5 +1,10 @@
 # pydra-templateflow
 
+[![PyPI - Version][pypi-version]][pypi-project]
+[![PyPI - Python Version][pypi-pyversions]][pypi-project]
+[![PyPI - Downloads][pypi-downloads]][pypi-project]
+![][status-test]
+
 ----
 
 Pydra tasks for TemplateFlow.
@@ -74,6 +79,11 @@ hatch run lint:fix
 
 This project is distributed under the terms of the [Apache License, Version 2.0][license].
 
+[pypi-project]: https://pypi.org/project/pydra-templateflow/
+[pypi-version]: https://img.shields.io/pypi/v/pydra-templateflow.svg
+[pypi-pyversions]: https://img.shields.io/pypi/pyversions/pydra-templateflow.svg
+[pypi-downloads]: https://static.pepy.tech/badge/pydra-templateflow
+[status-test]: https://github.com/ghisvail/pydra-templateflow/actions/workflows/test.yaml/badge.svg
 [pydra]: https://pydra.readthedocs.io/
 [templateflow]: https://www.templateflow.org/
 [templateflow-browse]: https://www.templateflow.org/browse/
